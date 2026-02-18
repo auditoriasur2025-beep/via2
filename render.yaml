@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: viacomodoro-scraper
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: ALLOWED_ORIGINS
+        value: https://tudominio.com  # ← CAMBIÁ por tu dominio real
+      - key: PUPPETEER_EXECUTABLE_PATH
+        value: /usr/bin/google-chrome-stable

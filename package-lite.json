@@ -1,0 +1,16 @@
+{
+  "name": "viacomodoro-scraper-lite",
+  "version": "2.0.0",
+  "description": "Scraper liviano de BusPlus sin Puppeteer",
+  "main": "server-lite.js",
+  "scripts": {
+    "start": "node server-lite.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
